@@ -4,26 +4,26 @@
 
 // Deklaration + Assignment
 
-const ageJohn = 30;
-const ageMark = 30;
+// const ageJohn = 30;
+// const ageMark = 30;
 
-// Deklaration
+// // Deklaration
 
-let isJohnOlder, isJohnEqual, isJohnYounger;
+// let isJohnOlder, isJohnEqual, isJohnYounger;
 
-// Test | Logische Aussage
-isJohnYounger = (ageJohn < ageMark)
-isJohnOlder = (ageJohn > ageMark);
-isJohnEqual = (ageJohn == ageMark);
+// // Test | Logische Aussage
+// isJohnYounger = (ageJohn < ageMark)
+// isJohnOlder = (ageJohn > ageMark);
+// isJohnEqual = (ageJohn == ageMark);
 
-// Ausgabe
-console.log("ageJohn: " + ageJohn);
-console.log("ageMark: " + ageMark);
-console.log("isJohnOlder: " + isJohnOlder);
-console.log("isJohnEqual: " + isJohnEqual);
-console.log("----------------------------");
+// // Ausgabe
+// console.log("ageJohn: " + ageJohn);
+// console.log("ageMark: " + ageMark);
+// console.log("isJohnOlder: " + isJohnOlder);
+// console.log("isJohnEqual: " + isJohnEqual);
+// console.log("----------------------------");
 
-/************ IF  ************/
+// /************ IF  ************/
 // TINA --> There is no alternative!
 // entweder JA oder nix ... alternativlos
 // Türsteher-Politik (Doors 10 p.m.)
@@ -77,18 +77,51 @@ console.log("----------------------------");
 /************ IF - ELSE IF  ************/
 // mit alternativen Fällen (älter, jünger, gleich alt)
 
-if(isJohnOlder) // 1. Test
+// if(isJohnOlder) // 1. Test
 
-{
-    console.log("John ist älter")    
-} 
-else if(isJohnEqual) // 2. Tesst
+// {
+//     console.log("John ist älter")    
+// } 
+// else if(isJohnEqual) // 2. Tesst
 
+// {
+//     console.log("John ist gleich alt")    
+// } 
+// else // 3. Test (Wenn alle vorigen Tests fehlschlagen)
+// {
+//     console.log("John ist jünger")
+// }
+
+/****** Fallunterscheidung / SWITCH|CASE 1 ******/
+
+const firstName = "Jane";
+let job;
+
+job = "driver";  // .. fährt TAXI! / UBER
+job = "diver"; // .. taucht
+job = "artist"; // .. malt ein Bild
+job = "teacher"; // .. unterrichtet
+job = "instructor"; // ..  unterrichtet
+// job = "drugdealer"; // .. macht etwas Anderes (default)
+
+switch (job) 
 {
-    console.log("John ist gleich alt")    
-} 
-else // 3. Test (Wenn alle vorigen Tests fehlschlagen)
-{
-    console.log("John ist jünger")
+    case "driver": //(== (test auf Gleichheit)
+        console.log(firstName + " fährt TAXI!");
+        break;
+    case "diver": //(== (test auf Gleichheit)
+        console.log(firstName + " taucht");
+        break;
+    case "artist": //(== (test auf Gleichheit)
+        console.log(firstName + " malt ein Bild");
+        break;
+    case "teacher": //(== (test auf Gleichheit)
+    case "instructor": //(== (test auf Gleichheit)
+
+        console.log(firstName + " unterrichtet");
+        break;
+
+    default:     
+        console.log(firstName + "  macht etwas Anderes")
+        break;
 }
-
