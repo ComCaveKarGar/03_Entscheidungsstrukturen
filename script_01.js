@@ -94,33 +94,52 @@
 
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
-const firstName = "Jane";
-let job;
+// const firstName = "Jane";
+// let job;
 
-job = "driver";  // .. fährt TAXI! / UBER
-job = "diver"; // .. taucht
-job = "artist"; // .. malt ein Bild
-job = "teacher"; // .. unterrichtet
-job = "instructor"; // ..  unterrichtet
-// job = "drugdealer"; // .. macht etwas Anderes (default)
+// job = "driver";  // .. fährt TAXI! / UBER
+// job = "diver"; // .. taucht
+// job = "artist"; // .. malt ein Bild
+// job = "teacher"; // .. unterrichtet
+// job = "instructor"; // ..  unterrichtet
+// // job = "drugdealer"; // .. macht etwas Anderes (default)
 
-switch (job) 
+// switch (job) 
+// {
+//     case "driver": //(== (test auf Gleichheit)
+//         console.log(firstName + " fährt TAXI!");
+//         break;
+//     case "diver": //(== (test auf Gleichheit)
+//         console.log(firstName + " taucht");
+//         break;
+//     case "artist": //(== (test auf Gleichheit)
+//         console.log(firstName + " malt ein Bild");
+//         break;
+//     case "teacher": //(== (test auf Gleichheit)
+//     case "instructor": //(== (test auf Gleichheit)
+//         console.log(firstName + " unterrichtet");
+//         break;
+
+//     default:     
+//         console.log(firstName + "  macht etwas Anderes")
+//         break;
+// }
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = true;
+const a = 2;
+
+switch (cond) 
 {
-    case "driver": //(== (test auf Gleichheit)
-        console.log(firstName + " fährt TAXI!");
+    case (a==1):
+        console.log("a ist gleich 1");
         break;
-    case "diver": //(== (test auf Gleichheit)
-        console.log(firstName + " taucht");
-        break;
-    case "artist": //(== (test auf Gleichheit)
-        console.log(firstName + " malt ein Bild");
-        break;
-    case "teacher": //(== (test auf Gleichheit)
-    case "instructor": //(== (test auf Gleichheit)
-        console.log(firstName + " unterrichtet");
+    case (a==2):
+        console.log("a ist gleich 2");
         break;
 
-    default:     
-        console.log(firstName + "  macht etwas Anderes")
+    default:
+        console.log("a hat einen anderen Wert!");
         break;
 }
