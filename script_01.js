@@ -117,7 +117,6 @@ switch (job)
         break;
     case "teacher": //(== (test auf Gleichheit)
     case "instructor": //(== (test auf Gleichheit)
-
         console.log(firstName + " unterrichtet");
         break;
 
