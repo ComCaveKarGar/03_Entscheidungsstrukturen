@@ -4,7 +4,7 @@
 
 // Deklaration + Assignment
 
-const ageJohn = 29;
+const ageJohn = 30;
 const ageMark = 30;
 
 // Deklaration
@@ -28,9 +28,10 @@ console.log("----------------------------");
 // entweder JA oder nix ... alternativlos
 // Türsteher-Politik (Doors 10 p.m.)
 
+// Variante 1
 // if(true)
 // if(false)
-
+// if(ageJohn > ageMark)
 // if(isJohnOlder)
 // {
 // console.log("John ist älter")
@@ -40,3 +41,32 @@ console.log("----------------------------");
 // {
 // console.log("John ist jünger")
 // }
+//////////////////////////////////////////////
+// if(isJohnEqual)
+// {
+// console.log("John und Mark sind gleich alt")
+// }
+// Variante 2 mit else
+//////////////////////////////////////////////
+
+
+/************ IF - ELSE  ************/
+// mit Alternative  
+// entweder ja oder nein
+
+// if(true)
+// if(false)
+// if(isJohnOlder)
+if(ageJohn > ageMark)
+
+
+// if (condition) 
+{
+    console.log("John ist älter")    
+} 
+else 
+{
+    console.log("John ist jünger")
+}
+
+
